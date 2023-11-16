@@ -1,0 +1,868 @@
+html {
+  overflow: hidden;
+  height: 100%;
+}
+body {
+  margin: 0;
+  background-color: black;
+  background-image: url("red_flower.jpg");
+  background-position: 45% 75%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+
+  display:flex;
+  direction:column;
+  width: 100%;
+}
+
+
+.university-section-h1{
+  color: rgb(255, 240, 240);;
+  font-family: Helvetica, Arial, sans-serif; 
+  font-weight: bold;
+  font-size: 29px;
+  margin: 0;
+}
+
+.university-section-h2 {
+  color: rgb(255, 240, 240);;
+  font-family: Helvetica, Arial, sans-serif; 
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+  padding-top: 2%;
+  line-height: auto;
+}
+
+.university-section-h3 {
+  color: rgb(255, 240, 240);;
+  font-family: Helvetica, Arial, sans-serif; 
+  font-weight: bold;
+  font-size: 17px;
+  margin: 0;
+  margin-top: 4px;    
+  line-height: auto;
+
+}
+
+.topnav {
+  background-color:rgb(80, 3, 3);
+  list-style-type: none;
+  padding: 8px;
+  overflow: hidden;
+  margin: 0;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.topnav-li {
+  display: inline-block;
+  padding: 9px;
+}
+
+.topnav-links:link {
+  /* font */
+  color: rgb(255, 240, 240);;
+  font-family: Helvetica, Arial, sans-serif; 
+  font-weight: bold;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+#togglebutton {
+  /* font */
+  color: rgb(255, 240, 240);;
+  font-family: Helvetica, Arial, sans-serif; 
+  font-weight: bold;
+  font-size: 23px;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-left: 540%;
+}
+
+#togglebutton:hover{
+  color: rgb(255, 240, 240);;
+  font-family: Helvetica, Arial, sans-serif; 
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-left: 515%;
+}
+
+.topnav-links:visited {
+  /* font */
+  color: rgb(255, 240, 240);;
+  font-family: Helvetica, Arial, sans-serif; 
+  font-weight: bold;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+.topnav-links:hover {
+  /* font */
+  color: rgb(255, 240, 240);
+  font-family: Helvetica, Arial, sans-serif; 
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.landing-bio {
+  margin-top: 4.2%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 3%;
+  border-bottom: 15px solid rgb(255, 240, 240);;
+  display: flex;
+  border-right-width: 5px;
+  border-right-color: rgb(255, 240, 240);;
+  border-right-style:solid;
+
+  overflow: hidden;
+}
+
+.landing-header {
+  background-color: rgba(255,255,255,0.6);
+  display: flex;
+  top: 0;
+  height: 30%;
+  width: 100%;
+  margin-top: 45%;
+  flex-direction: row;
+}
+
+.headshot {
+  border-radius: 200%;
+  width: 225px;
+  height: 225px;
+  margin-left: 40%;
+  margin-top: 10%;
+  object-fit: cover;
+  content: url("pfp.jpg");
+  padding-bottom: 3%;
+}    
+
+.landing-blurb {   
+  width: 65%;
+  height: 100%;
+  margin-left: 13%;
+
+  /* font */
+  color: black;
+  font-family: Arial, sans-serif; 
+  font-weight: bold;
+  font-style: bold;
+  font-size: 23px;
+  line-height: 150%;
+  margin-top: 1%;
+}
+
+.landing-blurb-h1 {
+  top: 0;
+  position: absolute;
+  color: rgb(255, 240, 240);;
+  font-size: 75px;
+  left: 32%;
+  line-height: auto;
+  padding-bottom: 3%;
+  margin-left: 10%;
+
+}
+
+.landing-blurb-h1 h2 {
+
+  margin-left: 50%;
+  font-family: "Brush Script MT";
+  font-weight:light;
+  position: absolute;
+  color: rgb(255, 240, 240);;
+}
+
+.widget-h1:link {
+  color: rgb(255, 240, 240);;
+  font-family: Helvetica, Arial, sans-serif; 
+  font-weight: bold;
+  font-size: 45px;
+  margin: 0;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display:block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.widget-h1:visited {
+  /* font */
+  color: rgb(255, 240, 240);;
+  font-family: Helvetica, Arial, sans-serif; 
+  font-weight: bold;
+  font-size: 45px;
+  margin: 0;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display:block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.widget-h1:hover {
+  /* font */
+  color: rgb(181, 167, 224);
+  font-family: Helvetica, Arial, sans-serif; 
+  font-weight: bold;
+  font-size: 45px;
+  margin: 0;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display:block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.widget-h1:link::after {
+  content: "\A";
+  white-space: pre;
+}
+
+.contact-footer {
+  background-color: rgb(255, 240, 240);;
+  padding: 30px;
+
+  color:rgb(46, 36, 31);
+  font-family: Helvetica, Arial, sans-serif; 
+}
+
+/*experience page*/
+.experience-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  background-color:rgb(255, 240, 240);
+
+  background-image: cover;
+  background-repeat: no-repeat;
+}
+.experience-body {
+  display:flex;
+  flex-direction:row;
+  overflow: auto;
+  height:100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.experience-header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4%;
+  width: 25%;
+  height: 120%;
+  background-color: black;
+  background-image:   url(red_flower.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 55%;
+
+  /*font*/
+  color: black;
+  font-family: Helvetica, Arial, sans-serif; 
+}
+
+.experience-header-h1 {
+  display: inline-flex;
+  color: rgb(255, 240, 240);
+  font-family: Helvetica, Arial, sans-serif; 
+  font-weight: bold;
+  font-size: 50px;
+
+  margin: 0;
+  margin-left: 10%;
+  padding-top: 9%;
+  padding-bottom: 3%;
+  text-align: left;
+}
+.experience-header-h1 h2 {
+  position: absolute;
+  left: 3.5%;
+  top: 3%;
+  font-size: 70px;
+  font-family: "Brush Script MT";
+  font-weight: lighter;
+
+}
+
+.experience-header-blurb {
+  display: block;
+  margin: 0;
+  max-width: 60%;
+  margin-top: 8%;
+  margin-left: 8%;
+  /*font*/
+  line-height: 150%;
+  text-align: left;
+  color: black;
+  font-family: Helvetica, Arial, sans-serif; 
+  font-weight: bold;
+  overflow: hidden;
+  font-size: 18px;
+}
+
+
+.experience-information {
+  display: block;
+  flex-direction: column; 
+  width: 50%;
+  align-content: space-between;
+  margin-top: 5%;
+  margin-left: 25%;
+}
+
+.experience-header-blurb:link {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: large;
+}
+
+.experience-header-blurb:visited {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-size: large;
+
+}
+
+#icode {
+  background-image: 
+  linear-gradient(
+    to right,
+    rgba(0,0,0, 0.6),
+    rgba(0,0,0, 0.4),
+    rgba(0, 0, 0, 0)
+  ),
+  url(lavender_banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#softinteraction {
+  background-image: 
+  linear-gradient(
+    to right,
+    rgba(0,0,0, 0.6),
+    rgba(0,0,0, 0.4),
+    rgba(0, 0, 0, 0)
+  ),
+  url(pph.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.resume-access {
+  display:block;
+  color: rgb(255, 240, 240);;
+  font-family: Helvetica, Arial, sans-serif; 
+  font-weight: bold;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 30px;
+  margin-top: 30%;
+  width: 80%;
+  text-align: center;
+  background-color: rgb(80, 3, 3);
+  margin-left: 10%;
+  text-decoration: none;
+}
+
+.resume-access:hover {
+  display:block;
+  color: rgb(255, 240, 240);
+  font-family: Helvetica, Arial, sans-serif; 
+  font-weight: bold;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 30px;
+  margin-top: 30%;
+  width: 80%;
+  text-align: center;
+  color: rgb(255, 240, 240);
+  margin-left: 10%;
+  text-decoration: none;
+}
+
+.portfolio-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 1);
+  background-image: url(red_flower.jpg);
+  background-size: cover;
+  background-position: 35% 30%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.portfolio-header-h1 {
+  display: flex;
+  margin-left: 50%;
+  margin-top: 5%;
+  position: relative;
+  white-space: nowrap;
+  flex-direction: column;
+}
+
+.portfolio-header-h1 h2 {
+  color: rgb(255, 240, 240);
+  font-size: 5em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-family: "Brush Script MT";
+  font-weight:light;
+
+}
+
+
+.portfolio-description-section {
+  margin-top: 4%;
+  display: flex;
+  flex-direction: column;
+  width: 100vw; 
+  height: 200%; 
+  overflow-x: hidden;
+  overflow-y: hidden;
+  
+}
+
+.portfolio-descriptions {
+  display:block;
+  width: 100%;
+  height: 20%;
+
+  display:flex;
+  flex-direction:row;
+  overflow-y: hidden;
+}
+
+.portfolio-description-writing {
+  
+  background: 
+  linear-gradient(
+      to right,
+  rgba(89, 81, 113, 0.8),
+  rgba(89, 81, 113, 0.8),
+  rgba(89, 81, 113, 0.8),
+  rgba(89, 81, 113, 0)
+  );
+  width: 65%;
+  height: 70%;
+  padding-right: 10%;
+}
+
+.portfolio-descriptions-h1 {
+  color: aliceblue;
+  font-family: Helvetica, Arial, sans-serif; 
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 3%;
+}
+
+.portfolio-descriptions-blurb {
+  display:block;
+  color: aliceblue;
+  font-family: Helvetica, Arial, sans-serif; 
+  font-weight: bold;
+  font-size: 16.5px;
+  margin-left: 3%;
+  padding-bottom: 5%;
+  max-width: 100%;
+  line-height: 150%;
+}
+
+.portfolio-title-section {
+  display: inline;
+  background-image: 
+  linear-gradient(
+    to right,
+    rgba(0,0,0, 0.6),
+    rgba(0,0,0, 0.4),
+    rgba(0, 0, 0, 0)
+  ),
+  url(lavender_banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 25%;
+  flex-direction: column;
+}
+
+.portfolio-title {
+  color: aliceblue;
+  font-family: Helvetica, Arial, sans-serif; 
+  font-weight: bold;
+  font-size: 35px;
+  margin-top: 60%;
+  text-align: center;
+}
+
+.portfolio-pictures {
+  display:block;
+  width: 40%;
+  height: 70%;
+  background-color: green;
+  margin-bottom: 8%;
+
+  background-image: url(portfolio-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+.carousel {
+  margin-left: 20%;
+  margin-top: 10%;
+  width: 60%;
+}
+
+ul.slides {
+  display: block;
+  position: relative;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+.slides * {
+  /*user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;*/
+}
+
+ul.slides input {
+  display: none; 
+}
+
+
+.slide-container { 
+  display: block; 
+}
+
+.slide-image {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  transition: all .7s ease-in-out;
+}   
+
+.slide-image img {
+  width: auto;
+  min-width: 100%;
+  height: 100%;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  font-size: 100px;
+  line-height: 600px;
+  color: #fff;
+}
+
+.carousel-controls label {
+  display: none;
+  position: absolute;
+  padding: 0 20px;
+  opacity: 0;
+  transition: opacity .2s;
+  cursor: pointer;
+}
+
+.slide-image:hover + .carousel-controls label{
+  opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+  opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+  width: 49%;
+  text-align: left;
+  left: 0;
+}
+
+.carousel-controls .next-slide {
+  width: 49%;
+  text-align: right;
+  right: 0;
+}
+
+.carousel-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  z-index: 999;
+  text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+  margin: 10px;
+}
+
+input:checked + .slide-container .slide-image {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .carousel-controls label {
+   display: block; 
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+opacity: 1;
+}
+
+
+input:checked + .slide-container .nav label { display: block; }
+
+#image2 {
+  background-image:
+  linear-gradient(
+      rgba(0,0,0, 0.8),
+      rgba(0,0,0, 0.6),
+      rgba(0, 0, 0, 0)
+    ),
+     url(pph.png);
+
+    color: aliceblue;
+    text-align:center;
+    vertical-align: middle;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#image3 {
+  background-image:
+  linear-gradient(
+      rgba(0,0,0, 0.8),
+      rgba(0,0,0, 0.6),
+      rgba(0, 0, 0, 0)
+    ),
+     url(pph.png);
+
+    color: aliceblue;
+    text-align:center;
+    vertical-align: middle;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide-blurb {
+
+    color: aliceblue;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin-top: 25%;
+    font-family: sans-serif;
+    font-size: larger;
+    max-width: 70%;
+    margin-left: 15%;
+    margin-right: 10%;
+  
+}
+
+.service-body {
+  height: 90%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(red_flower.jpg);
+  background-color: black;
+  background-position:  45% -300;
+}
+
+
+.service-header-h1 {
+  display: flex;
+  margin-left: 50%;
+  margin-top: 35%;
+  position: relative;
+  white-space: nowrap;
+  flex-direction: column;
+}
+
+.service-header-h1 h2 {
+  font-family: "Brush Script MT";
+  font-weight:light;
+  color: #fff;
+  font-size: 7em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.service-header-h1 h2:nth-child(1) {
+  color: rgb(255, 240, 240);  
+  font-family: "Brush Script MT";
+  font-weight:light;
+}
+
+.service-header-h1 h2:nth-child(2) {
+  color: aliceblue;
+}
+
+
+
+.service-blurb {
+  color: aliceblue;
+  font-size: larger;
+  margin-top: 13%;
+  width: 70%;
+  margin-left: 15%;
+  line-height: 175%;
+  font-family: sans-serif;
+}
+
+.service-blurb:link {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  white-space: nowrap;
+  display: inline;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 22px;
+  font-family: sans-serif;
+}
+
+.service-blurb:visited {
+  padding: none;
+  margin: none;
+  font-weight: bold;
+  white-space: nowrap;
+  display: inline;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 30px;
+  left: 0;
+}
+
+#image1 {
+  background-image:
+  linear-gradient(
+      rgba(0,0,0, 0.8),
+      rgba(0,0,0, 0.6),
+      rgba(0, 0, 0, 0)
+    ),
+     url(img1.png);
+
+    color: aliceblue;
+    text-align:center;
+    vertical-align: middle;
+    background-size: cover;
+    background-repeat: no-repeat;}
+
+#image2 {
+  background-image:
+  linear-gradient(
+      rgba(0,0,0, 0.8),
+      rgba(0,0,0, 0.6),
+      rgba(0, 0, 0, 0)
+    ),
+     url(img2.png);
+
+    color: aliceblue;
+    text-align:center;
+    vertical-align: middle;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#image3 {
+  background-image:
+  linear-gradient(
+      rgba(0,0,0, 0.8),
+      rgba(0,0,0, 0.6),
+      rgba(0, 0, 0, 0)
+    ),
+     url(img3.png);
+
+    color: aliceblue;
+    text-align:center;
+    vertical-align: middle;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#image4 {
+  background-image:
+  linear-gradient(
+      rgba(0,0,0, 0.8),
+      rgba(0,0,0, 0.6),
+      rgba(0, 0, 0, 0)
+    ),
+     url(img4.png);
+
+    color: aliceblue;
+    text-align:center;
+    vertical-align: middle;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#image5 {
+  background-image:
+  linear-gradient(
+      rgba(0,0,0, 0.8),
+      rgba(0,0,0, 0.6),
+      rgba(0, 0, 0, 0)
+    ),
+     url(img5.png);
+
+    color: aliceblue;
+    text-align:center;
+    vertical-align: middle;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
